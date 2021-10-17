@@ -1,0 +1,112 @@
+﻿%!TEX program = xelatex
+\documentclass{oblivoir}
+
+%%% 전처리부 (preamble)
+\usepackage{intothemath}
+\usepackage{stmaryrd}
+\usepackage{fancyhdr}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\usepackage[left = 2cm, right = 5cm, top = 3cm, bottom = 2cm, a4paper]{geometry}
+\usepackage{marginnote}
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+\usepackage{lipsum}
+\usepackage{color}
+\definecolor{skyblue}{RGB}{150, 210, 250}
+\definecolor{skyblue2}{RGB}{60, 120, 250}
+\setmainhangulfont{함초롬바탕}
+\setcounter{page}{2}
+
+
+
+\begin{document}
+
+\begin{tikzpicture}[remember picture,overlay]
+    \draw[fill = blue!40, , draw = blue!40] (-3, 0) rectangle (25, 4); 
+    % \node[draw = blue!40] at (4.3, 1.5)  {\setmainhangulfont{KoPubWorld돋움체_Pro Medium}{\textcolor{white}{{\huge 평면도형 제대로 살펴보기}}}};
+    
+    \end{tikzpicture}
+    
+    \begin{tikzpicture}[remember picture,overlay]
+    
+    
+    % \draw[fill = black!90] (-3, 4.0) rectangle (0.65, 0.55); 
+    % \node[draw] at (-0.9, 2.63) {\textcolor{skyblue}{{\Huge {Alpha}}}};
+    % \node[draw] at (-0.9, 1.80) {\textcolor{skyblue}{{\Huge\textbf {0.1}}}};
+    
+\end{tikzpicture}
+
+
+
+\begin{flushleft}
+    {\setmainfont{KoPubWorld돋움체_Pro Medium}\textcolor{skyblue2}{{\huge\textbf{2.}}}}
+    {\setmainhangulfont{KoPubWorld돋움체_Pro Medium}\textcolor{skyblue2}{{\huge\textbf{닮음비와 넓이 $\cdot$ 부피와 비의 관계}}}}
+
+\end{flushleft}
+
+\begin{flushleft}
+    칠각형의 한 꼭짓점에서 그을 수 있는 대각선의 개수는 4개이며, 
+    이 대각선으로 \\ 5개의 삼각형이 만들어진다.
+    이때, 삼각형의 세 내각의 크기의 합은 $180^{\circ}$이므로
+    칠각형의 내각의 크기의 합은 $900^{\circ}$임을 알 수 있다. 
+\end{flushleft}
+
+\begin{flushleft}
+    {$(1)$ $n$각형? $\frac{n(n-3)}{2}$개.}
+\end{flushleft}
+
+\begin{tcolorbox}[colback = skyblue!5!white, colframe = skyblue!99!black, title = \textmd{이해하기}]
+    $n$각형의 한 꼭짓점에서 그을 수 있는 대각선은 $(n-3)$개이므로
+    $n$개의 꼭짓점에서 그을 수 있는 대각선은 $n(n-3)$개이다.
+    \,그러나 한 대각선 위에는 $2$개의 꼭짓점이 있으므로 $n$각형의 대각선은
+    $\frac{n(n-3)}{2}$개이다.
+\end{tcolorbox}
+\end{tcolorbox}
+
+\marginpar{\tcbset{colback = skyblue!5!white, colframe = skyblue!99!black}
+            \begin{tcolorbox}[width = 3.8cm]
+                1) 지금부터 각주를 써보도록 합시다.
+                각주가 뭐냐고요? 아 몰라요 ㅋㅋ
+            \end{tcolorbox}}
+
+\begin{flushleft}
+    $(2)$ $n$각형의 내각의 크기의 합은 $180^{\circ} \times (n-2)$개이다.
+\end{flushleft}
+
+\begin{tcolorbox}[colback = skyblue!5!white, colframe = skyblue!99!black, title = \textmd{이해하기}]
+    $n$각형은 $(n-2)$개의 삼각형으로 쪼개어지므로 $n$각형의 내각의 크기의 합은
+    $(n-2)$개의 삼각형의 내각의 크기의 합과 같다. 이때 삼각형의 내각의 크기의 합은
+    $180^{\circ}$이므로 $n$각형의 내각의 크기의 합은 $180^{\circ} \times (n-2)$이다.
+\end{tcolorbox} 
+
+
+\begin{flushleft}
+    {\setmainfont{KoPubWorld돋움체_Pro Medium}\textcolor{skyblue2}{{\huge\textbf{3.}}}}
+    {\setmainhangulfont{KoPubWorld돋움체_Pro Medium}\textcolor{skyblue2}{{\huge\textbf{평행선과 넓이}}}}
+
+\end{flushleft}
+
+
+\marginpar{\tcbset{colback = skyblue!5!white, colframe = skyblue!99!black}
+            \begin{tcolorbox}[width = 3.8cm]
+                2) 지금부터 각주를 써보도록 합시다.
+                각주가 뭐냐고요? 아 몰라요 ㅋㅋ
+            \end{tcolorbox}}
+
+
+
+\begin{flushleft}
+    $(3)$ 삼각형의 한 외각의 크기는 그와 이웃하지 않는 두 내각의 크기의 합과 같다.
+\end{flushleft}
+
+\begin{tcolorbox}[colback = skyblue!5!white, colframe = skyblue!99!black, title = \textmd{이해하기}]
+    $\overline{AB} \parallel \overline{EC}$일 때, $\angle A = \angle ACE$ (엇각) $\angle B = \angle ECD$(동위각)이므로\\ 
+    $\angle A + \angle B + \angle C = \angle ACE + \angle ECD + \angle BCA = 180^{\circ}$ \\
+    따라서, $\angle C$의 외각 $\angle ACD$의 크기는 $\angle ACD = \angle ACE + \angle ECD = \angle A + \angle B$
+\end{tcolorbox}
+
+
+\end{document}
+
