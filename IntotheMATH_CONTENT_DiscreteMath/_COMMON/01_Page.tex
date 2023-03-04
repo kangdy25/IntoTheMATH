@@ -1,0 +1,237 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 상단 제목 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tikzpicture}[remember picture,overlay]
+    \draw[fill = blue!40] (0.46,0) rectangle (25, 4); 
+    \node[draw = blue!40] at (3, 1.7)  {\setmainhangulfont[Path=FONT/]{KOPUBWORLD_DOTUM_PRO_BOLD.OTF}{\textcolor{white}{{\huge 이산수학 개론}}}};  
+    \node[draw = blue!40] at (6.7, 0.8)  {\setmainhangulfont[Path=FONT/]{KOPUBWORLD_DOTUM_PRO_MEDIUM.OTF}{\textcolor{white}{{\small 이산수학의 기본이 되는 공의, 정의, 정리 개념과 자연수와 정수에 대해서 알아봅시다.}}}};
+    % (x축, y축)
+\end{tikzpicture}
+
+\begin{tikzpicture}[remember picture,overlay]
+    \draw[fill = black!90] (-2.51, 3.4) rectangle (0.45, 0.55); 
+    \node[] at (-1, 2.33) {\setmainfont[Path=FONT/]{KOPUBWORLD_BATANG_PRO_MEDIUM.OTF}{\textcolor{skyblue}{{\Huge {Alpha}}}}};
+    \node[] at (-1, 1.45)  {\setmainfont[Path=FONT/]{KOPUBWORLD_BATANG_PRO_BOLD.OTF}{{\textcolor{skyblue}{{\Huge\textbf {1.1.1}}}}}};
+\end{tikzpicture}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 이산수학의 정의 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushleft}
+    {\setmainfont[Path=FONT/]{KOPUBWORLD_DOTUM_PRO_BOLD.OTF} {\textcolor{header}{{\huge\textbf{1.}}}}}
+    {\setmainhangulfont[Path=FONT/]{KOPUBWORLD_DOTUM_PRO_BOLD.OTF} {\textcolor{header}{{\huge\textbf{이산수학의 정의}}}}}
+\end{flushleft}
+
+\begin{flushleft}
+    이산수학은 “이산”과 “수학”의 개념이 합쳐진 것으로, “이산”이란 “연속”과 반대되는 개념으로 서로 구별될 수 있는 부분들로 이루어진 것을 말합니다. “수학”이란 수학적 대상, 존재하는 것과 존재하지 않는 모든 추상적인 것들의 성질을 연구하는 학문입니다.
+    
+    \bigskip
+    이에 따라 “이산수학”은 이산수학적 대상의 성질들을 연구하는 학문입니다. 이산수학 특성 상 서로의 값들이 연속적이지 않고 떨어져 있기에 이산수학의 가장 기본은 “세는 것”입니다.
+\end{flushleft}
+
+\bigskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 공리, 정의, 그리고 정리 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushleft}
+    {\setmainfont[Path=FONT/]{KOPUBWORLD_DOTUM_PRO_BOLD.OTF}\textcolor{header}{{\huge\textbf{2.}}}}
+    {\setmainhangulfont[Path=FONT/]{KOPUBWORLD_DOTUM_PRO_BOLD.OTF}\textcolor{header}{{\huge\textbf{공리, 정의, 그리고 정리}}}}
+\end{flushleft}
+
+\begin{flushleft}
+    이산수학에서는 증명을 많이 다루게 되는데 이때 필수적으로 알아야 하는 개념들이 바로 “공리”, “정의”, “정리”입니다. 차례대로 알아보도록 하겠습니다.
+    
+    \bigskip
+    공리(Axiom)는 “증명 없이 참으로 받아들이는 명제”를 의미합니다. 이론 체계의 가장 기초적 근거가 됩니다. 그러나 각각의 공리가 증명이 필요없는 자명한 명제라 하더라도 여러 공리가 함께 있는 공리계에서는 문제가 될 수 있습니다. 완전하고 모순이 존재하지 않는 공리는 없기 때문입니다. (With 괴델의 불완전성 정리)
+    
+    \bigskip
+    정의(Definition)는 “용어나 기호의 의미를 명확히 정한 것”입니다.
+    
+    \bigskip
+    정리(Theorem)는 “공리계와 정의를 통하여 명제의 참 또는 거짓을 판별할 때, 참으로 증명된 명제”를 말합니다. 그리고 어떤 정리의 증명에 필요한 정리를 “보조정리(Lemma)”, 어떤 정리가 증명되면 자연스레 증명되는 정리를 “따름정리(Corollary)”라고 합니다.
+\end{flushleft}
+
+\begin{tcolorbox}[colback = white, colframe = Definition, title = \textmd{이해하기: 공의, 정의, 정리}]
+    공리라는 약속을 통하여 수학의 토대를 만들고, 그 위에 정의라는 약속을 통해 수학 용어를 만들고, 공리와 정의를 통하여 정리가 만들어지는 것입니다.
+\end{tcolorbox}
+
+\bigskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 자연수 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushleft}
+    {\setmainfont[Path=FONT/]{KOPUBWORLD_DOTUM_PRO_BOLD.OTF}\textcolor{header}{{\huge\textbf{3.}}}}
+    {\setmainhangulfont[Path=FONT/]{KOPUBWORLD_DOTUM_PRO_BOLD.OTF}\textcolor{header}{{\huge\textbf{자연수}}}}
+\end{flushleft}
+
+\begin{flushleft}
+    자연수는 무엇일까요? 예를 들어 723이라는 수가 있다고 생각해보면 723은 100이 7개, 10이 2개, 1이 3개로 이루어진 수라 할 수 있습니다. 그러나 이렇게 723이라는 수를 정의하기 위해서는 덧셈, 곱셈, 1, 10, 100, 2, 3, 7 이라는 개념을 알아야 합니다. 그 개념을 모르는 상태로는 어떻게 개념을 정의할 수 있을까요?
+
+    \bigskip
+    723을 정의할 때, “722보다 하나 더 큰 수”라고 정의해봅시다. 그러면 또 질문이 나오게 됩니다. “722는 어떻게 정의할 수 있는가?” 그렇다면 또 “721보다 하나 더 큰 수”라고 정의할 수 있게 되고, 이 작업을 반복하면 “2는 1보다 하나 더 큰 수”라고 대답하게 될 것입니다. 그러면 723이라는 수를 1과 덧셈만으로 정의를 한 것입니다. \\ 이 방식은 “자연수에 대한 공리적 접근 방식”이라고 합니다. 즉, 기본 항과 공리들을 정의하는 것입니다.
+\end{flushleft}
+
+\newpage
+
+\begin{flushleft}
+    {\setmainhangulfont[Path=FONT/]{KOPUBWORLD_DOTUM_PRO_BOLD.OTF}\textcolor{subheader}{{\LARGE\textbf{페아노 공리계}}}}
+\end{flushleft}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 페아노 공리계 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushleft}
+    이탈리아 수학자 “페아노”는 이러한 자연수에 대한 공리들을 제시했습니다. 이를 "페아노 공리계"라고 합니다. 페아노 공리계에서는 기본적으로 “1”, “Successor”, “자연수”만을 사용힙니다. 이때 “Successor”는 다음 숫자를 의미하는 용어입니다.
+\end{flushleft}
+
+\begin{tcolorbox}[colback = white, colframe = Axiom, title = \textmd{공리: 페아노 공리계}]
+    \begin{enumerate}
+        \item 1은 자연수이다.
+        \item 각각의 자연수는 오직 하나의 Successor만을 갖는다.
+        \item 1은 어떠한 자연수의 Successor가 아니다.
+        \item 만약 $\text{Succ}(x) = \text{Succ}(y)$이면 $x = y$이다.
+        \item 만약 $M$이 다음을 만족하는 자연수들의 부분집합이면, $M$은 모든 자연수들의 집합이다.
+        \begin{itemize}
+            \item $1 \in M$
+            \item $x \in M \Rightarrow \text{Succ}(x) \in M$
+        \end{itemize}
+    \end{enumerate}
+\end{tcolorbox}
+\bigskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 자연수의 성질 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushleft}
+    {\setmainhangulfont[Path=FONT/]{KOPUBWORLD_DOTUM_PRO_BOLD.OTF}\textcolor{subheader}{{\LARGE\textbf{자연수의 성질}}}}
+\end{flushleft}
+
+\begin{flushleft}
+    자연수의 성질에 대해 알아보기 전, “닫힘 성질”에 대해서 알아야 합니다. 닫힘 성질은 다음과 같습니다.
+\end{flushleft}
+
+\begin{tcolorbox}[colback = white, colframe = Theorem, title = \textmd{정리: 닫힘 성질}]
+    ”집합 $A$가 연산 $*$에 닫혀있다”는 것은 집합 $A$의 임의의 원소 $a, \ b$에 대해 $a * b$ 또한 집합 $A$의 원소가 된다는 것이다.
+\end{tcolorbox}
+
+\begin{flushleft}
+    자연수는 덧셈과 곱셈에 대해서 닫혀있습니다. 2개의 자연수의 합 또는 곱의 결과 또한 자연수가 된다는 뜻입니다. 그러나 뺄셈과 나눗셈에 대해서는 닫혀있지 않습니다. 
+
+    \bigskip
+    닫힘 성질을 만족하는 자연수의 성질에 대해서 더 알아보겠습니다.
+\end{flushleft}
+
+\begin{tcolorbox}[colback = white, colframe = Theorem, title = \textmd{정리: 자연수에 대한 성질}]
+    $a, \ b, \ c$를 자연수라 하면 다음과 같은 성질을 만족한다.
+    \begin{enumerate}
+        \item $a + b= b + a$    (덧셈의 교환법칙).
+        \item $a \times b = b \times a$    (곱셈의 교환법칙)
+        \item $a + (b + c) = (a + b) +c$    (덧셈의 결합법칙)
+        \item $a \times (b \times c) = (a \times b) \times c$    (곱셈의 결합법칙).
+        \item $a \times (b + c) = (a \times b) + (a \times c)$    (분배법칙)
+    \end{enumerate}
+\end{tcolorbox}
+
+\newpage
+
+\begin{flushleft}
+    마지막으로 자연수의 성질 중 “항등원”에 대해서 알아보겠습니다.
+\end{flushleft}
+
+\begin{tcolorbox}[colback = white, colframe = Definition, title = \textmd{정의: 항등원}]
+    어떤 연산에 대해 닫혀있는 집합이 존재할 때, 이 집합의 원소와 이항 연산을 했을 때 다시 그 원소를 값으로 갖는 유일한 원소 
+    \bigskip
+    곱셈 연산자의 항등원: $a \times x = a$인 $x$는 1이다.
+    덧셈 연산자의 항등원: $a + x = a$인 $x$는 0인데, 0은 자연수가 아니기에 자연수에서 덧셈 연산자의 항등원은 존재하지 않는다.
+\end{tcolorbox}
+
+\bigskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 정렬순서 원리 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushleft}
+    {\setmainhangulfont[Path=FONT/]{KOPUBWORLD_DOTUM_PRO_BOLD.OTF}\textcolor{subheader}{{\LARGE\textbf{정렬순서 원리}}}}
+\end{flushleft}
+
+\begin{flushleft}
+    자연수에 대한 정렬순서 원리에 대해 알아보겠습니다. 그 전에 정렬순서 원리를 이해하기 위해서는 순서 관계를 이해해야 하는데 어떠한 집합이 순서 관계를 가지려면 다음을 만족해야 합니다.
+\end{flushleft}
+
+\begin{tcolorbox}[colback = white, colframe = Definition, title = \textmd{정의: 순서 관계}]
+    \begin{itemize}
+            \item 두 원소 $x, \ y$가 다르다면 $x > y$ 이거나 $x < y$ 이다.
+            \item 임의의 $x$에 대해서 $x > x$ 이거나 $x < x$ 는 성립하지 않는다.
+            \item $x >y$ 이고 $y > z$ 이면 $x > z$ 이다.
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback = white, colframe = Theorem, title = \textmd{정리: 정렬순서 원리}]
+    어떤 집합에 대해서 공집합이 아닌 임의의 모든 부분집합들은 각각 하나의 최소 원소를 갖는다.
+\end{tcolorbox}
+
+\begin{flushleft}
+    즉, 정렬순서 원리는 집합의 원소들 사이에 순서가 잘 정해져 있어, 그 집합(공집합 제외)의 어떤 부분집합에서 최소 원소가 있을 때, 그 집합은 정렬되었다 라고 합니다. 자연수들의 집합에서 공집합이 아닌 임의의 부분집합을 잡아도 그 부분집합에는 최소 원소가 존재하기에 자연수는 정렬순서 원리를 따릅니다.
+\end{flushleft}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 정수 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushleft}
+    {\setmainfont[Path=FONT/]{KOPUBWORLD_DOTUM_PRO_BOLD.OTF}\textcolor{header}{{\huge\textbf{4.}}}}
+    {\setmainhangulfont[Path=FONT/]{KOPUBWORLD_DOTUM_PRO_BOLD.OTF}\textcolor{header}{{\huge\textbf{정수}}}}
+\end{flushleft}
+
+\begin{flushleft}
+    정수는 양의 정수(자연수)와 0, 음의 정수(자연수에 $-$ 기호를 붙인 수)로 이루어진 수 체계입니다. 정수 또한 자연수와 같이 셀 수 있는 무한집합이며 덧셈, 뺄셈, 곱셈에 대해서 닫혀있습니다.
+\end{flushleft}
+
+\bigskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 정수 표현 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushleft}
+    {\setmainhangulfont[Path=FONT/]{KOPUBWORLD_DOTUM_PRO_BOLD.OTF}\textcolor{subheader}{{\LARGE\textbf{정수 표현}}}}
+\end{flushleft}
+
+\begin{flushleft}
+    두 개의 정수 $n$과 $m$에 대해서 $n$이 $0$이 아닐 때, 직선 위에 $n$의 정수배들을 점으로 찍어 표현할 수 있고 이때, $m$을 어디든지 놓을 수 있습니다. 말로만 하면 어렵기에 그림을 통해 이해해보도록 하겠습니다.
+\end{flushleft}
+\begin{figure} [h]
+\centering
+\includegraphics[width=0.7 \textwidth]{Int.png}
+% \caption{\label{fig:Jesus}Jesus was uploaded via the file-tree menu.}
+\end{figure}
+\begin{flushleft}
+    이 그림과 같은 경우, 연속적인 점들 사이의 거리는 $n$의 절댓값인 $\lvert n \rvert$ 입니다. 만일 $m$이 $n$의 배수라고 하면 $m = qn + r$이라고 쓸 수 있으며, $r = 0$ 입니다. 만약 $m$이 $n$의 배수가 아니면 $m = qn + r$이라고 쓰며, $0 < r< \lvert n \rvert$ 입니다. 
+\end{flushleft}
+
+\begin{tcolorbox}[colback = white, colframe = Definition, title = \textmd{정의: 정수 표현 방법}]
+    두 정수 $m$, $n$에 대해서 모든 경우는 $m = qn + r$ 이며, $0 \leq r \leq \lvert n \rvert$ 으로 표현할 수 있다. (이때 $q$는 정수이다.)
+\end{tcolorbox}
+
+\bigskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 정수의 성질 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushleft}
+    {\setmainhangulfont[Path=FONT/]{KOPUBWORLD_DOTUM_PRO_BOLD.OTF}\textcolor{subheader}{{\LARGE\textbf{정수의 성질}}}}
+\end{flushleft}
+
+\begin{flushleft}
+    정수 표현에 있어서 중요한 배수 표현은 다음과 같습니다. 배수 표현을 통하여 정수의 성질도 도출해낼 수 있습니다. 
+\end{flushleft}
+
+\begin{tcolorbox}[colback = white, colframe = Definition, title = \textmd{정의: 배수 표현}]
+    두 정수 $m$과 $n$에 대하여, $m$은 $n$의 배수이면 $n \ | \ m$ 이라 쓰며 $n$은 $m$을 나눈다라고 표현한다.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback = white, colframe = Theorem, title = \textmd{정리: 정수의 성질}]
+    \begin{enumerate}
+        \item 만일 $a \ | \ b$ 이고, $a \ | \ c$ 이면 $a \ | \ (b \pm c)$ 이다.
+        \item 만일 $a \ | \ b$ 혹은, $a \ | \ c$ 이면 $a \ | \ bc$ 이다.
+        \item 만일 $a \ | \ b$ 이고, $b \ | \ c$ 이면 $a \ | \ c$ 이다
+    \end{enumerate}
+\end{tcolorbox}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%% 소수와 합성수 %%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushleft}
+    {\setmainhangulfont[Path=FONT/]{KOPUBWORLD_DOTUM_PRO_BOLD.OTF}\textcolor{subheader}{{\LARGE\textbf{소수와 합성수}}}}
+\end{flushleft}
+
+\begin{flushleft}
+    소수는 현대 암호 시스템에서 필수적인 개념입니다. 특히 소수에 관한 내용 중 알아야 하는 것은 “소수 판별법”입니다. 그러나 현재까지는 어떤 수가 소수인지를 빠르게 계산하는 알고리즘을 찾지 못했습니다.
+\end{flushleft}
+
+\begin{tcolorbox}[colback = white, colframe = Definition, title = \textmd{정의: 소수}]
+    약수(나누어떨어지는 수)로 $1$과 자기 자신만을 갖는 $1$보다 큰 정수 
+    Ex: $2, \ 3, \ 5, \ 7 ...$
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback = white, colframe = Definition, title = \textmd{정의: 합성수}]
+    소수가 아닌 $1$보다 큰 정수 
+    Ex: $4, \ 6, \ 8, \ 9 ...$
+\end{tcolorbox}
+
+\begin{flushleft}
+    소수에 대한 내용은 추후에 더 깊고 자세하게 다루도록 하겠습니다.
+\end{flushleft}
