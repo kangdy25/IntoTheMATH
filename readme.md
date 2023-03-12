@@ -1,7 +1,7 @@
 # Into the Math
 
-" 일격필살 팀의 인투더 수학 교재 스타일을 참조하여 만든 자체 제작 수학 교재입니다. 
-[여기]("https://github.com/KrissHeo/MathTextBook")
+> 일격필살 팀의 인투더 수학 교재 스타일을 참조하여 만든 자체 제작 수학 교재입니다. 
+[저자 github 참조]("https://github.com/KrissHeo/MathTextBook")
 
 ## 개요
 
