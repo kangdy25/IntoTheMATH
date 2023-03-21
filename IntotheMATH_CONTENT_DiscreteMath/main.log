@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.3.4)  18 MAR 2023 22:02
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.3.4)  21 MAR 2023 12:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1400,12 +1400,44 @@ File: uesvect.fd
 ) [2] [3]
 File: Int.png Graphic file (type bmp)
 <Int.png>
- [4]) [5] (./_COMMON/02_Page.tex [6]
+ [4]) [5] (./_COMMON/02_Page.tex [6] [7]
 Underfull \hbox (badness 10000) in paragraph at lines 128--130
 
  []
 
-) [7] (./_COMMON/03_Page.tex) (./main.aux)
+[8] [9] [10] [11]
+Missing character: There is no 인 (U+C778) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 경 (U+ACBD) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 우 (U+C6B0) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 와 (U+C640) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 가 (U+AC00) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 모 (U+BAA8) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 두 (U+B450) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 인 (U+C778) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 경 (U+ACBD) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 우 (U+C6B0) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 와 (U+C640) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 가 (U+AC00) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 모 (U+BAA8) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 두 (U+B450) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 인 (U+C778) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 경 (U+ACBD) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 우 (U+C6B0) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 인 (U+C778) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 경 (U+ACBD) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 우 (U+C6B0) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 어 (U+C5B4) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 떤 (U+B5A4) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 에 (U+C5D0) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 대 (U+B300) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 해 (U+D574) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 인 (U+C778) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 경 (U+ACBD) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 우 (U+C6B0) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 그 (U+ADF8) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 외 (U+C678) in font [lmroman10-regular]:mapping=tex-text;!
+Missing character: There is no 에 (U+C5D0) in font [lmroman10-regular]:mapping=tex-text;!
+) [12] (./_COMMON/03_Page.tex) (./main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1413,12 +1445,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 40990 strings out of 476684
- 810841 string characters out of 5807584
+ 41012 strings out of 476684
+ 811199 string characters out of 5807584
  1893012 words of memory out of 5000000
- 60513 multiletter control sequences out of 15000+600000
+ 60535 multiletter control sequences out of 15000+600000
  515695 words of font info for 95 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  143i,11n,151p,1027b,2754s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (7 pages).
+Output written on main.pdf (12 pages).
