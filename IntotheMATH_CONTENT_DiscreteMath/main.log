@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.3.4)  24 MAR 2023 18:12
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.3.4)  24 MAR 2023 18:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1303,7 +1303,7 @@ Package hyperref Info: Link coloring ON on input line 70.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(./_COMMON/01_Page.tex
+(./_COMMON/Alpha_01.1.tex
 
 Package fontspec Info: Font family 'KOPUBWORLD_DOTUM_PRO_BOLD.OTF(0)' created
 (fontspec)             for font 'KOPUBWORLD_DOTUM_PRO_BOLD.OTF' with options
@@ -1400,7 +1400,7 @@ File: uesvect.fd
 ) [2] [3]
 File: Int.png Graphic file (type bmp)
 <Int.png>
- [4]) [5] (./_COMMON/02_Page.tex [6] [7]
+ [4]) [5] (./_COMMON/Alpha_01.2.tex [6] [7]
 Underfull \hbox (badness 10000) in paragraph at lines 128--130
 
  []
@@ -1437,7 +1437,7 @@ Missing character: There is no 우 (U+C6B0) in font [lmroman10-regular]:mapping=
 Missing character: There is no 그 (U+ADF8) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 외 (U+C678) in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no 에 (U+C5D0) in font [lmroman10-regular]:mapping=tex-text;!
-[12] [13]) [14] (./_COMMON/03_Page.tex) (./main.aux)
+[12] [13]) [14] (./_COMMON/Alpha_02.1.tex) [15] (./main.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1445,12 +1445,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 41018 strings out of 476684
- 811295 string characters out of 5807584
+ 41024 strings out of 476684
+ 811369 string characters out of 5807584
  1893012 words of memory out of 5000000
- 60541 multiletter control sequences out of 15000+600000
+ 60544 multiletter control sequences out of 15000+600000
  515695 words of font info for 95 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  143i,11n,151p,1027b,2754s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (14 pages).
+Output written on main.pdf (15 pages).
