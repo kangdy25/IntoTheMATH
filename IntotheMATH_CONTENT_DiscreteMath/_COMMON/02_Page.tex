@@ -346,7 +346,7 @@
     \end{cases} \]
 \end{tcolorbox}
 
-\begin{tcolorbox}[colback = white, colframe = Theorem, title = \textmd{정의: 부울곱}]
+\begin{tcolorbox}[colback = white, colframe = Theorem, title = \textmd{정리: 부울 행렬의 성질}]
     $A, \ B, \ C$가 부울 행렬일 때, 다음 성질이 성립한다.
     \begin{itemize}
         \item $A \vee B = B \vee A \\ A \wedge B = B \wedge A  $ (교환법칙)
@@ -356,3 +356,81 @@
     \end{itemize}
 \end{tcolorbox}
 
+\newpage
+\begin{flushleft}
+    {\setmainfont[Path=FONT/]{KOPUBWORLD_DOTUM_PRO_BOLD.OTF} {\textcolor{header}{{\huge\textbf{4.}}}}}
+    {\setmainhangulfont[Path=FONT/]{KOPUBWORLD_DOTUM_PRO_BOLD.OTF} {\textcolor{header}{{\huge\textbf{행렬식}}}}}
+\end{flushleft}
+
+\begin{flushleft}
+    행렬식은 기본적으로 행렬의 역행렬을 구하기 위하여 주로 사용됩니다.
+\end{flushleft}
+
+\begin{tcolorbox}[colback = white, colframe = Definition, title = \textmd{정의: 행렬식}]
+    행렬식은 모든 정방 행렬 $A$에 대하여 고유한 수치 값을 대응시키는 것을 말하며, $A$의 행렬식을 $\lvert A \rvert$ 또는 $\text{det}(A)$로 표시합니다.
+    $2\times 2$인 행렬의 행렬식은 다음과 같이 정의합니다.
+    \[ \text{det}\begin{pmatrix} a_{11} & a_{12} \\ a_{21} & a_{22}
+    \end{pmatrix} = a_{11}a_{22} - a_{12}a_{21} \]
+\end{tcolorbox}
+
+\begin{flushleft}
+    일반적인 행렬에 대한 행렬식은 사루스 법칙으로 구할 수 있습니다.
+\end{flushleft}
+
+\begin{tcolorbox}[colback = white, colframe = Theorem, title = \textmd{정리: 사루스 법칙}]
+    $3 \times 3$ 행렬에서 사용되는 행렬을 구하는 공식이다. (사루스 법칙은 계산을 위한 공식으로 수학 공부 할 때는 그다지 추천하지 않는 공식입니다.)
+    \[ \begin{vmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33}
+    \end{vmatrix} = a_{11}a_{22}a_{33} + a_{12}a_{23}a_{31} + a_{13}a_{21}a_{32} - a_{13}a_{22}a_{31} - a_{12}a_{21}a_{33} - a_{11}a_{23}a_{32} \]
+\end{tcolorbox}
+
+\bigskip
+\begin{flushleft}
+    {\setmainhangulfont[Path=FONT/]{KOPUBWORLD_DOTUM_PRO_BOLD.OTF}\textcolor{subheader}{{\LARGE\textbf{행렬식에 관한 성질}}}}
+\end{flushleft}
+
+
+\begin{flushleft}
+    다음은 행렬식에 관한 몇 가지 성질들입니다.
+\end{flushleft}
+
+\begin{tcolorbox}[colback = white, colframe = Theorem, title = \textmd{정리: 행렬식에 관한 몇 가지 성질}]
+    $A, \ B, \ C$가 부울 행렬일 때, 다음 성질이 성립한다.
+    \begin{itemize}
+        \item 행렬 $A$의 각 원소의 행과 열이 바뀌어도 $\text{det}(A)$는 변하지 않는다.
+        \item 행렬식에서 두 개의 행이나 열을 서로 바꾸면 부호만 변한다.
+        \item 행렬 $A$가 서로 비례하는 두 개의 행 또는 두 개의 열을 갖는 정방 행렬이면 $\text{det}(A) = 0$이다.
+        \item 행렬식에서 특정 어느 행이나 열의 각 성분이 두 수의 합일 때, 두 개의 행렬식의 합으로 나눌 수 있다.
+    \end{itemize}
+\end{tcolorbox}
+
+\bigskip
+\begin{flushleft}
+    {\setmainhangulfont[Path=FONT/]{KOPUBWORLD_DOTUM_PRO_BOLD.OTF}\textcolor{subheader}{{\LARGE\textbf{소행렬식과 여인수}}}}
+\end{flushleft}
+
+\begin{flushleft}
+    간단한 행렬의 행렬식은 사루스 법칙으로 계산할 수 있지만, 행렬의 크기가 커지면 계산하기 쉽지 않습니다. 
+    이러한 문제점을 해결하기 위해 행렬식을 “소행렬식”과 “여인수”를 사용하여 계산하는 방법이 고안되었습니다.
+\end{flushleft}
+
+\begin{tcolorbox}[colback = white, colframe = Definition, title = \textmd{정의: 소행렬식}]
+    행렬식에서 한 원소의 소행렬식은 그 원소가 있는 행과 열을 제외시킨 행렬식이다. 
+행렬식이 $\begin{vmatrix} a_{11} & a_{12} & a_{13} \\ a_{21} & a_{22} & a_{23} \\ a_{31} & a_{32} & a_{33}
+\end{vmatrix} $이렇게 주어진다면 $a_{11}$의 소행렬식은 $\begin{vmatrix}  a_{22} & a_{23} \\  a_{32} & a_{33}
+\end{vmatrix} $이다.
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback = white, colframe = Definition, title = \textmd{정의: 여인수}]
+    하나의 정방 행렬에서 한 원소의 여인수는 그 원소의 소행렬식에 부호를 붙인 값을 말한다. 
+    즉, 행렬 $A$의 $i$번째 행과 $j$번째 열을 제거해 만든 소행렬 $A_{ij}$의 행렬식 $\begin{vmatrix} A_{ij} \end{vmatrix}$에 부호 $(-1)^{i+j}$을 붙인 값을 $A$의 $i, \ j$번째 여인수라고 한다. 부호는 다음과 같이 붙인다.
+    \[ \begin{vmatrix} + & - & + & \cdots \\ - &+ & - &  \cdots  \\ + & - & + & \cdots \\ \vdots  & \vdots  & \vdots 
+    \end{vmatrix}  \]
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback = white, colframe = Theorem, title = \textmd{정리: 여인수 전개(라플라스 전개)}]
+    $M_{ij}$를 원소 $a_{ij}$의 소행렬식이라고 하면  $a_{ij}$의 여인수 $C_{ij} = (-1)^{i+ j}M_{ij}$이다. 
+    또한, 행렬식 $\begin{vmatrix} A \end{vmatrix}$를 $n$행에 대해서 전개하면 다음과 같다.
+    \[ \text{det}(A) = a_{n1}\begin{vmatrix} A_{n1} \end{vmatrix} + a_{n2}\begin{vmatrix} A_{n2} \end{vmatrix} + \cdots + a_{nn}\begin{vmatrix} A_{nn} \end{vmatrix} \]
+    같은 방법으로 행렬식 $\begin{vmatrix} A \end{vmatrix}$를 $n$열에 대해서 전개하면 다음과 같다.
+    \[ \text{det}(A) = a_{1n}\begin{vmatrix} A_{1n} \end{vmatrix} + a_{2n}\begin{vmatrix} A_{2n} \end{vmatrix} + \cdots + a_{nn}\begin{vmatrix} A_{nn} \end{vmatrix} \]
+\end{tcolorbox}
